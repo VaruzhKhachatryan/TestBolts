@@ -47,30 +47,30 @@ static const int dayInSeconds = 86400;
 }
 
 - (void)sendFacebookContactsIfNeeded{
-    if ([SCContactsSender isfacebookSendDay]) {
+    //if ([SCContactsSender isfacebookSendDay]) {
         SCGetFacebookAnalyticContacts *deviceContactsGetter = [[SCGetFacebookAnalyticContacts alloc]init];
         [[deviceContactsGetter getAnalyticContactsIfHasPermition] continueWithSuccessBlock:^id(BFTask *task) {
             return [self sendContacts:task.result contactTypeKey:facebookContactTypeKey];
         }];
-    }
+    //}
 }
 
 - (void)sendTwitterContactsIfNeeded{
-    if ([SCContactsSender isTwitterSendDay]) {
+   // if ([SCContactsSender isTwitterSendDay]) {
         SCGetTwitterAnalyticContacts *deviceContactsGetter = [[SCGetTwitterAnalyticContacts alloc]init];
         [[deviceContactsGetter getAnalyticContactsIfHasPermition] continueWithSuccessBlock:^id(BFTask *task) {
             return [self sendContacts:task.result contactTypeKey:twitterContactTypeKey];
         }];
-    }
+    //}
 }
 
 - (void)sendInstagramContactsIfNeeded{
-    if ([SCContactsSender isInstagramSendDay]) {
+    //if ([SCContactsSender isInstagramSendDay]) {
         SCGetInstagramAnalyticContacts *deviceContactsGetter = [[SCGetInstagramAnalyticContacts alloc]init];
         [[deviceContactsGetter getAnalyticContactsIfHasPermition] continueWithSuccessBlock:^id(BFTask *task) {
             return [self sendContacts:task.result contactTypeKey:instagramContactTypeKey];
         }];
-    }
+   // }
 }
 
 

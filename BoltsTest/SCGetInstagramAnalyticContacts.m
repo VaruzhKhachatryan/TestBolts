@@ -12,7 +12,7 @@
 
 - (BFTask *)getAnalyticContactsIfHasPermition{
     BFTaskCompletionSource *task = [BFTaskCompletionSource taskCompletionSource];
-    [task setResult:@"data"];
+    [task setResult:@[@"data1",@"data2"]];
     
     return task.task;
 }
