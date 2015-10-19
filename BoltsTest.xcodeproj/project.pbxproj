@@ -15,7 +15,6 @@
 		578074641BCFADCB0096C757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578074621BCFADCB0096C757 /* LaunchScreen.storyboard */; };
 		5780746F1BCFADCB0096C757 /* BoltsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780746E1BCFADCB0096C757 /* BoltsTestTests.m */; };
 		5780747A1BCFADCB0096C757 /* BoltsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578074791BCFADCB0096C757 /* BoltsTestUITests.m */; };
-		5780748C1BCFB11D0096C757 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5780748B1BCFB11D0096C757 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		57A886D61BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D11BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
 		57A886D71BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D31BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
 		57A886D81BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D51BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
@@ -23,6 +22,18 @@
 		57A886DF1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886DE1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m */; settings = {ASSET_TAGS = (); }; };
 		57A886E61BD50BC200B28B4A /* NSData+SC_BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886E51BD50BC200B28B4A /* NSData+SC_BFTask.m */; settings = {ASSET_TAGS = (); }; };
 		57AFE66F1BD51442003151B4 /* SCFileIOSerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE66E1BD51442003151B4 /* SCFileIOSerialQueue.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631841BD51F3E001CBDB3 /* GAGifsArtAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631811BD51F3E001CBDB3 /* GAGifsArtAPI.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631851BD51F3E001CBDB3 /* GASharedState.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631831BD51F3E001CBDB3 /* GASharedState.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631971BD51F58001CBDB3 /* SCFBSDKAccessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631881BD51F58001CBDB3 /* SCFBSDKAccessManager.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631981BD51F58001CBDB3 /* SCFBSDKGetActionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD96318A1BD51F58001CBDB3 /* SCFBSDKGetActionsManager.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631991BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD96318D1BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.m */; settings = {ASSET_TAGS = (); }; };
+		AD96319A1BD51F58001CBDB3 /* SCFBSDKResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AD96318F1BD51F58001CBDB3 /* SCFBSDKResult.m */; settings = {ASSET_TAGS = (); }; };
+		AD96319B1BD51F58001CBDB3 /* OMGFormURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631921BD51F58001CBDB3 /* OMGFormURLEncode.m */; settings = {ASSET_TAGS = (); }; };
+		AD96319C1BD51F58001CBDB3 /* OMGHTTPURLRQ.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631941BD51F58001CBDB3 /* OMGHTTPURLRQ.m */; settings = {ASSET_TAGS = (); }; };
+		AD96319D1BD51F58001CBDB3 /* OMGUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631961BD51F58001CBDB3 /* OMGUserAgent.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631A31BD520DA001CBDB3 /* GAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631A01BD520DA001CBDB3 /* GAUser.m */; settings = {ASSET_TAGS = (); }; };
+		AD9631A41BD520DA001CBDB3 /* GAUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9631A21BD520DA001CBDB3 /* GAUserManager.m */; settings = {ASSET_TAGS = (); }; };
+		CBD629C7EEE78989D2E6EF53 /* libPods-BoltsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBE9F3A4916BF58B0423EA2 /* libPods-BoltsTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36A42E2059C48C7672B810C9 /* Pods-BoltsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoltsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoltsTest/Pods-BoltsTest.release.xcconfig"; sourceTree = "<group>"; };
 		578074511BCFADCB0096C757 /* BoltsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoltsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578074551BCFADCB0096C757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		578074571BCFADCB0096C757 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,7 +71,6 @@
 		578074751BCFADCB0096C757 /* BoltsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoltsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		578074791BCFADCB0096C757 /* BoltsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoltsTestUITests.m; sourceTree = "<group>"; };
 		5780747B1BCFADCB0096C757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5780748B1BCFB11D0096C757 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		57A886CF1BD508CE00B28B4A /* SCGetAnalyticContactsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetAnalyticContactsProtocol.h; sourceTree = "<group>"; };
 		57A886D01BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetFacebookAnalyticContacts.h; sourceTree = "<group>"; };
 		57A886D11BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGetFacebookAnalyticContacts.m; sourceTree = "<group>"; };
@@ -75,6 +86,31 @@
 		57A886E51BD50BC200B28B4A /* NSData+SC_BFTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SC_BFTask.m"; sourceTree = "<group>"; };
 		57AFE66D1BD51442003151B4 /* SCFileIOSerialQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileIOSerialQueue.h; sourceTree = "<group>"; };
 		57AFE66E1BD51442003151B4 /* SCFileIOSerialQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileIOSerialQueue.m; sourceTree = "<group>"; };
+		6BBE9F3A4916BF58B0423EA2 /* libPods-BoltsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoltsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9631801BD51F3E001CBDB3 /* GAGifsArtAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGifsArtAPI.h; sourceTree = "<group>"; };
+		AD9631811BD51F3E001CBDB3 /* GAGifsArtAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAGifsArtAPI.m; sourceTree = "<group>"; };
+		AD9631821BD51F3E001CBDB3 /* GASharedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASharedState.h; sourceTree = "<group>"; };
+		AD9631831BD51F3E001CBDB3 /* GASharedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASharedState.m; sourceTree = "<group>"; };
+		AD9631871BD51F58001CBDB3 /* SCFBSDKAccessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFBSDKAccessManager.h; sourceTree = "<group>"; };
+		AD9631881BD51F58001CBDB3 /* SCFBSDKAccessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFBSDKAccessManager.m; sourceTree = "<group>"; };
+		AD9631891BD51F58001CBDB3 /* SCFBSDKGetActionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFBSDKGetActionsManager.h; sourceTree = "<group>"; };
+		AD96318A1BD51F58001CBDB3 /* SCFBSDKGetActionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFBSDKGetActionsManager.m; sourceTree = "<group>"; };
+		AD96318B1BD51F58001CBDB3 /* SCFBSDKHelperConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFBSDKHelperConstants.h; sourceTree = "<group>"; };
+		AD96318C1BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFBSDKPublishActionsManager.h; sourceTree = "<group>"; };
+		AD96318D1BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFBSDKPublishActionsManager.m; sourceTree = "<group>"; };
+		AD96318E1BD51F58001CBDB3 /* SCFBSDKResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFBSDKResult.h; sourceTree = "<group>"; };
+		AD96318F1BD51F58001CBDB3 /* SCFBSDKResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFBSDKResult.m; sourceTree = "<group>"; };
+		AD9631911BD51F58001CBDB3 /* OMGFormURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMGFormURLEncode.h; sourceTree = "<group>"; };
+		AD9631921BD51F58001CBDB3 /* OMGFormURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMGFormURLEncode.m; sourceTree = "<group>"; };
+		AD9631931BD51F58001CBDB3 /* OMGHTTPURLRQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMGHTTPURLRQ.h; sourceTree = "<group>"; };
+		AD9631941BD51F58001CBDB3 /* OMGHTTPURLRQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMGHTTPURLRQ.m; sourceTree = "<group>"; };
+		AD9631951BD51F58001CBDB3 /* OMGUserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMGUserAgent.h; sourceTree = "<group>"; };
+		AD9631961BD51F58001CBDB3 /* OMGUserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMGUserAgent.m; sourceTree = "<group>"; };
+		AD96319F1BD520DA001CBDB3 /* GAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAUser.h; sourceTree = "<group>"; };
+		AD9631A01BD520DA001CBDB3 /* GAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAUser.m; sourceTree = "<group>"; };
+		AD9631A11BD520DA001CBDB3 /* GAUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAUserManager.h; sourceTree = "<group>"; };
+		AD9631A21BD520DA001CBDB3 /* GAUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAUserManager.m; sourceTree = "<group>"; };
+		D3591D82F6A0F19DE2ED5DE5 /* Pods-BoltsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoltsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoltsTest/Pods-BoltsTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5780748C1BCFB11D0096C757 /* Bolts.framework in Frameworks */,
+				CBD629C7EEE78989D2E6EF53 /* libPods-BoltsTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +146,8 @@
 				5780746D1BCFADCB0096C757 /* BoltsTestTests */,
 				578074781BCFADCB0096C757 /* BoltsTestUITests */,
 				578074521BCFADCB0096C757 /* Products */,
+				70B281E7C804AF9BDE9E24E6 /* Pods */,
+				E8DE89D82AAB14063EC82017 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +164,7 @@
 		578074531BCFADCB0096C757 /* BoltsTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD96317D1BD5168C001CBDB3 /* requestClass */,
 				578074571BCFADCB0096C757 /* AppDelegate.h */,
 				578074581BCFADCB0096C757 /* AppDelegate.m */,
 				5780745A1BCFADCB0096C757 /* ViewController.h */,
@@ -135,7 +174,6 @@
 				578074601BCFADCB0096C757 /* Assets.xcassets */,
 				578074621BCFADCB0096C757 /* LaunchScreen.storyboard */,
 				578074651BCFADCB0096C757 /* Info.plist */,
-				5780748B1BCFB11D0096C757 /* Bolts.framework */,
 				578074541BCFADCB0096C757 /* Supporting Files */,
 			);
 			path = BoltsTest;
@@ -197,6 +235,85 @@
 			name = "helper classes";
 			sourceTree = "<group>";
 		};
+		70B281E7C804AF9BDE9E24E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3591D82F6A0F19DE2ED5DE5 /* Pods-BoltsTest.debug.xcconfig */,
+				36A42E2059C48C7672B810C9 /* Pods-BoltsTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD96317D1BD5168C001CBDB3 /* requestClass */ = {
+			isa = PBXGroup;
+			children = (
+				AD96317F1BD51F3E001CBDB3 /* RequestControllers */,
+			);
+			name = requestClass;
+			sourceTree = "<group>";
+		};
+		AD96317F1BD51F3E001CBDB3 /* RequestControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD96319E1BD520DA001CBDB3 /* UserManager */,
+				AD9631861BD51F58001CBDB3 /* GAFBSDK */,
+				AD9631901BD51F58001CBDB3 /* OMGHTTP */,
+				AD9631801BD51F3E001CBDB3 /* GAGifsArtAPI.h */,
+				AD9631811BD51F3E001CBDB3 /* GAGifsArtAPI.m */,
+				AD9631821BD51F3E001CBDB3 /* GASharedState.h */,
+				AD9631831BD51F3E001CBDB3 /* GASharedState.m */,
+			);
+			path = RequestControllers;
+			sourceTree = "<group>";
+		};
+		AD9631861BD51F58001CBDB3 /* GAFBSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AD9631871BD51F58001CBDB3 /* SCFBSDKAccessManager.h */,
+				AD9631881BD51F58001CBDB3 /* SCFBSDKAccessManager.m */,
+				AD9631891BD51F58001CBDB3 /* SCFBSDKGetActionsManager.h */,
+				AD96318A1BD51F58001CBDB3 /* SCFBSDKGetActionsManager.m */,
+				AD96318B1BD51F58001CBDB3 /* SCFBSDKHelperConstants.h */,
+				AD96318C1BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.h */,
+				AD96318D1BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.m */,
+				AD96318E1BD51F58001CBDB3 /* SCFBSDKResult.h */,
+				AD96318F1BD51F58001CBDB3 /* SCFBSDKResult.m */,
+			);
+			path = GAFBSDK;
+			sourceTree = "<group>";
+		};
+		AD9631901BD51F58001CBDB3 /* OMGHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				AD9631911BD51F58001CBDB3 /* OMGFormURLEncode.h */,
+				AD9631921BD51F58001CBDB3 /* OMGFormURLEncode.m */,
+				AD9631931BD51F58001CBDB3 /* OMGHTTPURLRQ.h */,
+				AD9631941BD51F58001CBDB3 /* OMGHTTPURLRQ.m */,
+				AD9631951BD51F58001CBDB3 /* OMGUserAgent.h */,
+				AD9631961BD51F58001CBDB3 /* OMGUserAgent.m */,
+			);
+			path = OMGHTTP;
+			sourceTree = "<group>";
+		};
+		AD96319E1BD520DA001CBDB3 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD96319F1BD520DA001CBDB3 /* GAUser.h */,
+				AD9631A01BD520DA001CBDB3 /* GAUser.m */,
+				AD9631A11BD520DA001CBDB3 /* GAUserManager.h */,
+				AD9631A21BD520DA001CBDB3 /* GAUserManager.m */,
+			);
+			path = UserManager;
+			sourceTree = "<group>";
+		};
+		E8DE89D82AAB14063EC82017 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBE9F3A4916BF58B0423EA2 /* libPods-BoltsTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5780747E1BCFADCB0096C757 /* Build configuration list for PBXNativeTarget "BoltsTest" */;
 			buildPhases = (
+				BE0971101742FBDFF73C9DCB /* Check Pods Manifest.lock */,
 				5780744D1BCFADCB0096C757 /* Sources */,
 				5780744E1BCFADCB0096C757 /* Frameworks */,
 				5780744F1BCFADCB0096C757 /* Resources */,
+				00FBEA229994803BE46C302D /* Embed Pods Frameworks */,
+				9165A57C699F15800FC04649 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,20 +442,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FBEA229994803BE46C302D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoltsTest/Pods-BoltsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9165A57C699F15800FC04649 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoltsTest/Pods-BoltsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0971101742FBDFF73C9DCB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5780744D1BCFADCB0096C757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD96319D1BD51F58001CBDB3 /* OMGUserAgent.m in Sources */,
 				5780745C1BCFADCB0096C757 /* ViewController.m in Sources */,
+				AD9631981BD51F58001CBDB3 /* SCFBSDKGetActionsManager.m in Sources */,
+				AD96319C1BD51F58001CBDB3 /* OMGHTTPURLRQ.m in Sources */,
 				57AFE66F1BD51442003151B4 /* SCFileIOSerialQueue.m in Sources */,
+				AD96319B1BD51F58001CBDB3 /* OMGFormURLEncode.m in Sources */,
 				578074591BCFADCB0096C757 /* AppDelegate.m in Sources */,
 				57A886D71BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m in Sources */,
 				57A886D61BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m in Sources */,
+				AD9631991BD51F58001CBDB3 /* SCFBSDKPublishActionsManager.m in Sources */,
+				AD9631841BD51F3E001CBDB3 /* GAGifsArtAPI.m in Sources */,
 				57A886D81BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m in Sources */,
+				AD96319A1BD51F58001CBDB3 /* SCFBSDKResult.m in Sources */,
+				AD9631A41BD520DA001CBDB3 /* GAUserManager.m in Sources */,
 				578074561BCFADCB0096C757 /* main.m in Sources */,
+				AD9631A31BD520DA001CBDB3 /* GAUser.m in Sources */,
 				57A886DB1BD508FE00B28B4A /* SCContactsSender.m in Sources */,
 				57A886E61BD50BC200B28B4A /* NSData+SC_BFTask.m in Sources */,
+				AD9631971BD51F58001CBDB3 /* SCFBSDKAccessManager.m in Sources */,
+				AD9631851BD51F3E001CBDB3 /* GASharedState.m in Sources */,
 				57A886DF1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +652,7 @@
 		};
 		5780747F1BCFADCB0096C757 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3591D82F6A0F19DE2ED5DE5 /* Pods-BoltsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -488,6 +668,7 @@
 		};
 		578074801BCFADCB0096C757 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A42E2059C48C7672B810C9 /* Pods-BoltsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
