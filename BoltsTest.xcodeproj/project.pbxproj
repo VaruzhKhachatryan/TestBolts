@@ -16,6 +16,13 @@
 		5780746F1BCFADCB0096C757 /* BoltsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5780746E1BCFADCB0096C757 /* BoltsTestTests.m */; };
 		5780747A1BCFADCB0096C757 /* BoltsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578074791BCFADCB0096C757 /* BoltsTestUITests.m */; };
 		5780748C1BCFB11D0096C757 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5780748B1BCFB11D0096C757 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		57A886D61BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D11BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
+		57A886D71BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D31BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
+		57A886D81BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886D51BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m */; settings = {ASSET_TAGS = (); }; };
+		57A886DB1BD508FE00B28B4A /* SCContactsSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886DA1BD508FE00B28B4A /* SCContactsSender.m */; settings = {ASSET_TAGS = (); }; };
+		57A886DF1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886DE1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m */; settings = {ASSET_TAGS = (); }; };
+		57A886E61BD50BC200B28B4A /* NSData+SC_BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A886E51BD50BC200B28B4A /* NSData+SC_BFTask.m */; settings = {ASSET_TAGS = (); }; };
+		57AFE66F1BD51442003151B4 /* SCFileIOSerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE66E1BD51442003151B4 /* SCFileIOSerialQueue.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,21 @@
 		578074791BCFADCB0096C757 /* BoltsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoltsTestUITests.m; sourceTree = "<group>"; };
 		5780747B1BCFADCB0096C757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5780748B1BCFB11D0096C757 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		57A886CF1BD508CE00B28B4A /* SCGetAnalyticContactsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetAnalyticContactsProtocol.h; sourceTree = "<group>"; };
+		57A886D01BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetFacebookAnalyticContacts.h; sourceTree = "<group>"; };
+		57A886D11BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGetFacebookAnalyticContacts.m; sourceTree = "<group>"; };
+		57A886D21BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetTwitterAnalyticContacts.h; sourceTree = "<group>"; };
+		57A886D31BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGetTwitterAnalyticContacts.m; sourceTree = "<group>"; };
+		57A886D41BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGetInstagramAnalyticContacts.h; sourceTree = "<group>"; };
+		57A886D51BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGetInstagramAnalyticContacts.m; sourceTree = "<group>"; };
+		57A886D91BD508FE00B28B4A /* SCContactsSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContactsSender.h; sourceTree = "<group>"; };
+		57A886DA1BD508FE00B28B4A /* SCContactsSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContactsSender.m; sourceTree = "<group>"; };
+		57A886DD1BD50B9800B28B4A /* NSURLSession+SCSessionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+SCSessionTask.h"; sourceTree = "<group>"; };
+		57A886DE1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+SCSessionTask.m"; sourceTree = "<group>"; };
+		57A886E41BD50BC200B28B4A /* NSData+SC_BFTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SC_BFTask.h"; sourceTree = "<group>"; };
+		57A886E51BD50BC200B28B4A /* NSData+SC_BFTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SC_BFTask.m"; sourceTree = "<group>"; };
+		57AFE66D1BD51442003151B4 /* SCFileIOSerialQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileIOSerialQueue.h; sourceTree = "<group>"; };
+		57AFE66E1BD51442003151B4 /* SCFileIOSerialQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileIOSerialQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +130,7 @@
 				578074581BCFADCB0096C757 /* AppDelegate.m */,
 				5780745A1BCFADCB0096C757 /* ViewController.h */,
 				5780745B1BCFADCB0096C757 /* ViewController.m */,
+				5780748D1BCFBB610096C757 /* contactClasses */,
 				5780745D1BCFADCB0096C757 /* Main.storyboard */,
 				578074601BCFADCB0096C757 /* Assets.xcassets */,
 				578074621BCFADCB0096C757 /* LaunchScreen.storyboard */,
@@ -142,6 +165,36 @@
 				5780747B1BCFADCB0096C757 /* Info.plist */,
 			);
 			path = BoltsTestUITests;
+			sourceTree = "<group>";
+		};
+		5780748D1BCFBB610096C757 /* contactClasses */ = {
+			isa = PBXGroup;
+			children = (
+				57A886D91BD508FE00B28B4A /* SCContactsSender.h */,
+				57A886DA1BD508FE00B28B4A /* SCContactsSender.m */,
+				57A886CF1BD508CE00B28B4A /* SCGetAnalyticContactsProtocol.h */,
+				57A886D01BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.h */,
+				57A886D11BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m */,
+				57A886D21BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.h */,
+				57A886D31BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m */,
+				57A886D41BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.h */,
+				57A886D51BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m */,
+				57A886DC1BD50ADB00B28B4A /* helper classes */,
+			);
+			name = contactClasses;
+			sourceTree = "<group>";
+		};
+		57A886DC1BD50ADB00B28B4A /* helper classes */ = {
+			isa = PBXGroup;
+			children = (
+				57A886E41BD50BC200B28B4A /* NSData+SC_BFTask.h */,
+				57A886E51BD50BC200B28B4A /* NSData+SC_BFTask.m */,
+				57A886DD1BD50B9800B28B4A /* NSURLSession+SCSessionTask.h */,
+				57A886DE1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m */,
+				57AFE66D1BD51442003151B4 /* SCFileIOSerialQueue.h */,
+				57AFE66E1BD51442003151B4 /* SCFileIOSerialQueue.m */,
+			);
+			name = "helper classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5780745C1BCFADCB0096C757 /* ViewController.m in Sources */,
+				57AFE66F1BD51442003151B4 /* SCFileIOSerialQueue.m in Sources */,
 				578074591BCFADCB0096C757 /* AppDelegate.m in Sources */,
+				57A886D71BD508CE00B28B4A /* SCGetTwitterAnalyticContacts.m in Sources */,
+				57A886D61BD508CE00B28B4A /* SCGetFacebookAnalyticContacts.m in Sources */,
+				57A886D81BD508CE00B28B4A /* SCGetInstagramAnalyticContacts.m in Sources */,
 				578074561BCFADCB0096C757 /* main.m in Sources */,
+				57A886DB1BD508FE00B28B4A /* SCContactsSender.m in Sources */,
+				57A886E61BD50BC200B28B4A /* NSData+SC_BFTask.m in Sources */,
+				57A886DF1BD50B9800B28B4A /* NSURLSession+SCSessionTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +568,7 @@
 				578074801BCFADCB0096C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578074811BCFADCB0096C757 /* Build configuration list for PBXNativeTarget "BoltsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +577,7 @@
 				578074831BCFADCB0096C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578074841BCFADCB0096C757 /* Build configuration list for PBXNativeTarget "BoltsTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +586,7 @@
 				578074861BCFADCB0096C757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

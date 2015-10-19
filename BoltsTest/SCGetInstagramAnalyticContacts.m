@@ -1,0 +1,21 @@
+//
+//  SCGetInstagramAnalyticContacts.m
+//  picsart
+//
+//  Created by Varuzhan Khachatryan on 10/14/15.
+//  Copyright © 2015 Socialin Inc. All rights reserved.
+//
+
+#import "SCGetInstagramAnalyticContacts.h"
+
+@implementation SCGetInstagramAnalyticContacts
+
+- (BFTask *)getAnalyticContactsIfHasPermition{
+    BFTaskCompletionSource *task = [BFTaskCompletionSource taskCompletionSource];
+    [task setResult:@"data"];
+    
+    return task.task;
+}
+
+
+@end
