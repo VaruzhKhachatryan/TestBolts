@@ -79,13 +79,17 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
 
 - (BFTask *)loginWithParams:(NSDictionary *)params {
     NSMutableURLRequest *request = [OMGHTTPURLRQ POST:[self signInUrl] :params];
+    NSLog(@"loginWithParams created request");
     return [[self gifsArtTask:request] continueWithSuccessBlock:^id(BFTask *task) {
+        NSLog(@"loginWithParams save User");
+        NSLog(@"Chaining Tasks Together request and save");
         return [self saveUser:task];
     }];
 }
 
 - (BFTask *)signUpWithParams:(NSDictionary *)params {
     NSMutableURLRequest *request = [OMGHTTPURLRQ POST:[self signUpUrl] :params];
+    NSLog(@"signUpWithParams create request");
     return [[self gifsArtTask:request] continueWithSuccessBlock:^id(BFTask *task) {
         return [self saveUser:task];
     }];
@@ -96,8 +100,10 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
         BOOL success = [[GAUserManager sharedInstance] saveUserData:task.result];
         
         if (success) {
+            NSLog(@"saveUser success");
             return task;
         }
+        NSLog(@"saveUser error fail");
         return [BFTask taskWithError:[NSError errorWithDomain:@"com.gifsArt.saveUserError" code:-2 userInfo:@{NSLocalizedDescriptionKey : @"couldn't save User"}]]; // todo change this error
     }];
     
@@ -120,6 +126,7 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
 
 - (BFTask *)reviseUserNameRequest:(NSDictionary *)params {
     NSMutableURLRequest *request = [OMGHTTPURLRQ POST:[self reviseUsernameUrl] :params];
+    NSLog(@"reviseUserNameRequest create request");
     return [self gifsArtTask:request];
 }
 
@@ -133,6 +140,7 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
 
 - (BFTask *)loginWithFaceBook {
     return [[self facebookInfoForLogin] continueWithSuccessBlock:^id(BFTask *task) {
+        NSLog(@"loginWithFaceBook facebookInfoForLogin continueWithSuccessBlock");
         NSMutableDictionary *userInfo = [self facebookUserInfo:task.result];
         return [[self loginWithParams:[self picsartLoginParamsForFacebook:task.result]] continueWithBlock:^id(BFTask *task) {
             return [self checkUserExist:task userInfo:userInfo];
@@ -145,8 +153,10 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
     
     [[SCFBSDKGetActionsManager getActionsManager] userInformationWithCallback:^(NSDictionary *response, NSError *error) {
         if (error || response == nil) {
+            NSLog(@"facebookInfoForLogin error fail");
             [task setError:error ? error : [NSError errorWithDomain:@"com.gifsart.facebookError" code:-2 userInfo:@{NSLocalizedDescriptionKey : @"user canceled"}]];//added custom error
         } else {
+            NSLog(@"facebookInfoForLogin result success");
             [task setResult:response];
         }
     }];
@@ -206,6 +216,8 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
                                           @"token" : [FBSDKAccessToken currentAccessToken].tokenString,
                                           @"auth" : jsonString
                                           };
+    
+    NSLog(@"created picsartLoginParamsForFaceBook");
     
     return picsartLoginParams;
     
@@ -272,6 +284,7 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
     return [[[self task:request] continueWithSuccessBlock:^id(BFTask *task) {
        return [self apiResultForRequest:task];
     }] continueWithExecutor:[BFExecutor mainThreadExecutor] withBlock:^id(BFTask *task) {
+        NSLog(@"gifsArtTask isMainThread == %@",@([NSThread isMainThread]));
         return task;
     }];
 }
@@ -281,13 +294,16 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:task.result options:0 error:&jsonError];
     
     if (jsonError) {
+        NSLog(@"apiResultForRequest jsonError");
         return [BFTask taskWithError:jsonError];
     }
     
     NSError *error = [self apiCheckResult:result];
     if (error) {
+        NSLog(@"apiResultForRequest error %@",[error.userInfo valueForKey:@"message"]);
         return [BFTask taskWithError:error];
     }
+    NSLog(@"apiResultForRequest result ");
     return [BFTask taskWithResult:result];
 }
 
@@ -324,11 +340,18 @@ static NSString *UPLOAD_PHOTO = @"photos/add.json";
         [NSException raise:@"request cant be nil" format:@""];
     }
     
+    NSLog(@"requesting");
+    
     BFTaskCompletionSource *task = [BFTaskCompletionSource taskCompletionSource];
-    [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data,
+                                                                                   NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"task response has just come");
+        
         if (error) {
+            NSLog(@"taskCompletionSource set error");
             [task setError:error];
         } else {
+             NSLog(@"taskCompletionSource set result");
             [task setResult:data];
         }
     }] resume];
