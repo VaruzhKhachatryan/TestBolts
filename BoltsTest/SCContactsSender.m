@@ -49,7 +49,7 @@ static const int dayInSeconds = 86400;
 - (void)sendFacebookContactsIfNeeded{
     //if ([SCContactsSender isfacebookSendDay]) {
         SCGetFacebookAnalyticContacts *deviceContactsGetter = [[SCGetFacebookAnalyticContacts alloc]init];
-        [[deviceContactsGetter getAnalyticContactsIfHasPermition] continueWithSuccessBlock:^id(BFTask *task) {
+        [[deviceContactsGetter getAnalyticContactsIfHasPermition] continueWithSuccessBlock:^id(BFTask<NSArray *> *task) {
             return [self sendContacts:task.result contactTypeKey:facebookContactTypeKey];
         }];
     //}
