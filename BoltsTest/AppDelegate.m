@@ -14,6 +14,9 @@
 
 @implementation AppDelegate
 
+- (void)simpleMethod {
+    NSLog(@"ok");
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
