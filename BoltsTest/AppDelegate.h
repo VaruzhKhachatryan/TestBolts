@@ -11,13 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-//aaaaaaaaaaaaa
 
-///bbbbbbb
-
-//EEEEEEEE FROM CCCCC
-
-//ddddddd
 
 @end
 
