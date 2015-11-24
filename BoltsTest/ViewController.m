@@ -24,27 +24,26 @@
 //    [[SCContactsSender sharedInstance] sendTwitterContactsIfNeeded];
 //    [[SCContactsSender sharedInstance] sendInstagramContactsIfNeeded];
     
-//    BFCancellationTokenSource *cts = [BFCancellationTokenSource cancellationTokenSource];
-//   [cts cancelAfterDelay:2];
-//    [[[self fiveSecondsTaskWithCancelationToken:cts.token]continueWithSuccessBlock:^id(BFTask *task) {
-//        return [self simpleTask];
-//    } cancellationToken:cts.token]continueWithSuccessBlock:^id(BFTask *task) {
-//                NSLog(@"second task completed with result : %@",task.result);
-//        return nil;
-//    }];
+    //CancelationToken *cancelationToken = [[CancelationToken alloc]init];
+    BFCancellationTokenSource *cts = [BFCancellationTokenSource cancellationTokenSource];
+    //[cts cancel];
+    [[[self fiveSecondsTaskWithCancelationToken:cts.token]continueWithSuccessBlock:^id(BFTask *task) {
+        return [self simpleTask];
+    } cancellationToken:cts.token]continueWithSuccessBlock:^id(BFTask *task) {
+                NSLog(@"second task completed with result : %@",task.result);
+        return nil;
+    }];
 
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [cts cancel];
 //    });
-
 //
-    //[self testBolts];
-    [self testParallelNumbers];
+//    [self testBolts];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)testBolts {
-    [self loginWithPA];
+//    [self loginWithPA];
 //    [self loginWithFB];
     //[self testParallel];
 //    [self testParallelNumbers];
@@ -108,7 +107,7 @@
 
     
 }
-//dasdasd
+
 - (void)testParallelNumbers {
     
     NSMutableArray *tasks = [[NSMutableArray alloc] init];
@@ -137,11 +136,11 @@
 - (BFTask *)fiveSecondsTaskWithCancelationToken:(BFCancellationToken *)cancelationToken{
     BFTaskCompletionSource *completionSoucre = [BFTaskCompletionSource taskCompletionSource];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (cancelationToken.cancellationRequested) {
-            NSLog(@"task cacnceled");
-            [completionSoucre cancel];
-            return;
-        }
+//        if (cancelationToken.cancellationRequested) {
+//            NSLog(@"task cacncel");
+//            [completionSoucre cancel];
+//            return;
+//        }
         NSLog(@"task completed");
         [completionSoucre setResult:@"ok"];
     });
